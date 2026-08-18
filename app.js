@@ -3,7 +3,7 @@ const app = express();
 const fruits = require("./routes/fruits");
 
 app.get("/", (req, res) => {
-  res.send("Bonjour, Fruite");
+  res.send("Bonjour, Monde !");
 });
 
 app.use(express.json());
