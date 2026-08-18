@@ -22,7 +22,6 @@ const show = async (req, res) => {
 const create = async (req, res) => {
   try {
     const newFruit = await Fruit.create(req.body);
-    //newFruit.save()
     res.status(201).send(newFruit);
   } catch (err) {
     res.status(409).send({ error: err.msg });
